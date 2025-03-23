@@ -1,0 +1,179 @@
+
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f7f7f7;
+}
+
+.login-container {
+width: 350px;
+margin: 50px auto;
+background-color: #fff;
+padding: 20px;
+border: 1px solid #ddd;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.instagram-logo {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.instagram-logo img {
+width: 150px;
+}
+
+.login-form {
+margin-bottom: 20px;
+}
+
+.username-input, .password-input {
+width: 100%;
+height: 40px;
+margin-bottom: 10px;
+padding: 10px;
+border: 1px solid #ccc;
+}
+
+.login-btn {
+width: 100%;
+height: 40px;
+background-color: #4CAF50;
+color: #fff;
+padding: 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.forgot-password {
+float: right;
+margin-top: 10px;
+font-size: 14px;
+color: #4CAF50;
+}
+
+.remember-me {
+margin-bottom: 20px;
+}
+
+.separator {
+margin: 20px 0;
+text-align: center;
+}
+
+.separator span {
+background-color: #fff;
+padding: 0 10px;
+position: relative;
+top: -10px;
+}
+
+.alternative-login {
+margin-bottom: 20px;
+}
+
+.facebook-login, .google-login {
+display: block;
+width: 100%;
+height: 40px;
+margin-bottom: 10px;
+padding: 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.facebook-login {
+background-color: #3b5998;
+color: #fff;
+}
+
+.google-login {
+background-color: #dd4b39;
+color: #fff;
+}
+
+.signup-link {
+text-align: center;
+}
+
+.signup-link a {
+font-size: 14px;
+color: #4CAF50;
+}
+
+.login-container .login-form .username-input:focus, .login-container .login-form .password-input:focus {
+border-color: #4CAF50;
+box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+.login-container .login-form .login-btn:hover {
+background-color: #3e8e41;
+}
+
+.login-container .alternative-login .facebook-login:hover {
+background-color: #2f477d;
+}
+
+.login-container .alternative-login .google-login:hover {
+background-color: #c2333b;
+}
+
+.login-container .signup-link a:hover {
+color: #3e8e41;
+}
+
+.login-container .remember-me {
+margin-bottom: 20px;
+}
+
+.login-container .remember-me input[type="checkbox"] {
+margin-right: 10px;
+}
+
+.login-container .separator {
+margin: 20px 0;
+text-align: center;
+}
+
+.login-container .separator span {
+background-color: #fff;
+padding: 0 10px;
+position: relative;
+top: -10px;
+}
+
+.login-container .alternative-login {
+margin-bottom: 20px;
+}
+
+.login-container .alternative-login a {
+display: block;
+width: 100%;
+height: 40px;
+margin-bottom: 10px;
+padding: 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.login-container .alternative-login .facebook-login {
+background-color: #3b5998;
+color: #fff;
+}
+
+.login-container .alternative-login .google-login {
+background-color: #dd4b39;
+color: #fff;
+}
+
+.login-container .signup-link {
+text-align: center;
+}
+
+.login-container .signup-link a {
+font-size: 14px;
+color: #4CAF50;
+}
