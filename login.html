@@ -1,4 +1,4 @@
-Here's a basic implementation of the Instagram-like Login Page:
+Here's an updated version of the HTML, CSS, and JavaScript code to create a more Instagram-like login page:
 
 
 HTML:
@@ -7,16 +7,16 @@ HTML:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Instagram</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="login-container">
-        <div class="login-header">
-            <img src="logo.png" alt="Logo" class="logo">
+        <div class="instagram-logo">
+            <img src="instagram-logo.png" alt="Instagram Logo">
         </div>
         <form class="login-form">
-            <input type="text" placeholder="Username" class="username-input">
+            <input type="text" placeholder="Phone number, username, or email" class="username-input">
             <input type="password" placeholder="Password" class="password-input">
             <button class="login-btn">Log In</button>
             <a href="#" class="forgot-password">Forgot password?</a>
@@ -26,7 +26,6 @@ HTML:
         </div>
         <div class="alternative-login">
             <a href="#" class="facebook-login">Log in with Facebook</a>
-            <a href="#" class="google-login">Log in with Google</a>
         </div>
         <div class="signup-link">
             <a href="#">Don't have an account? Sign up</a>
@@ -45,7 +44,7 @@ body {
 }
 
 .login-container {
-    width: 300px;
+    width: 350px;
     margin: 50px auto;
     background-color: #fff;
     padding: 20px;
@@ -53,15 +52,13 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.login-header {
+.instagram-logo {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
+.instagram-logo img {
+    width: 150px;
 }
 
 .login-form {
@@ -110,7 +107,7 @@ body {
     margin-bottom: 20px;
 }
 
-.facebook-login, .google-login {
+.facebook-login {
     display: block;
     width: 100%;
     height: 40px;
@@ -119,15 +116,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.facebook-login {
     background-color: #3b5998;
-    color: #fff;
-}
-
-.google-login {
-    background-color: #dd4b39;
     color: #fff;
 }
 
@@ -170,4 +159,10 @@ document.querySelector('.login-btn').addEventListener('click', function(event) {
     }
 });
 
-Note that this implementation is basic
+Note that this implementation is more similar to Instagram's login page, but it's still a simplified version.
+
+
+Please note that you'll need to replace the instagram-logo.png image with your own logo.
+
+
+Also, this code doesn't include any actual authentication or validation,
