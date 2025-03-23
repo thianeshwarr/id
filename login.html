@@ -1,0 +1,173 @@
+Here's a basic implementation of the Instagram-like Login Page:
+
+
+HTML:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+        <form class="login-form">
+            <input type="text" placeholder="Username" class="username-input">
+            <input type="password" placeholder="Password" class="password-input">
+            <button class="login-btn">Log In</button>
+            <a href="#" class="forgot-password">Forgot password?</a>
+        </form>
+        <div class="separator">
+            <span>OR</span>
+        </div>
+        <div class="alternative-login">
+            <a href="#" class="facebook-login">Log in with Facebook</a>
+            <a href="#" class="google-login">Log in with Google</a>
+        </div>
+        <div class="signup-link">
+            <a href="#">Don't have an account? Sign up</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+CSS (in styles.css file):
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.login-container {
+    width: 300px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.login-form {
+    margin-bottom: 20px;
+}
+
+.username-input, .password-input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.login-btn {
+    width: 100%;
+    height: 40px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    float: right;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #4CAF50;
+}
+
+.separator {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.separator span {
+    background-color: #fff;
+    padding: 0 10px;
+    position: relative;
+    top: -10px;
+}
+
+.alternative-login {
+    margin-bottom: 20px;
+}
+
+.facebook-login, .google-login {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.facebook-login {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.google-login {
+    background-color: #dd4b39;
+    color: #fff;
+}
+
+.signup-link {
+    text-align: center;
+}
+
+.signup-link a {
+    font-size: 14px;
+    color: #4CAF50;
+}
+
+
+
+JavaScript (in script.js file):
+// Add event listener to password input field
+document.querySelector('.password-input').addEventListener('input', function() {
+    // Toggle password visibility icon
+    const eyeIcon = document.querySelector('.eye-icon');
+    if (this.type === 'password') {
+        eyeIcon.classList.add('fa-eye-slash');
+    } else {
+        eyeIcon.classList.remove('fa-eye-slash');
+    }
+});
+
+// Add event listener to login button
+document.querySelector('.login-btn').addEventListener('click', function(event) {
+    // Prevent default form submission
+    event.preventDefault();
+    // Get username and password input values
+    const username = document.querySelector('.username-input').value;
+    const password = document.querySelector('.password-input').value;
+    // Validate input values (TO DO: implement actual validation)
+    if (username && password) {
+        console.log('Login successful!');
+        // Redirect to dashboard or next page (TO DO: implement actual redirect)
+    } else {
+        console.log('Invalid username or password!');
+    }
+});
+
+Note that this implementation is basic
